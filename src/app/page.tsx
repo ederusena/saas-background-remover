@@ -11,6 +11,9 @@ export default async function Home() {
         <div className="flex gap-4">
           {user ? (
             <form action="/logout" method="post">
+              <Button asChild variant="ghost">
+                <Link href="/dashboard">Dashboard</Link>
+              </Button>
               <Button type="submit" variant="ghost">
                 Sair
               </Button>
